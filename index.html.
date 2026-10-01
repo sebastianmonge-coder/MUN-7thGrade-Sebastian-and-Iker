@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safe Spaces | Golden Valley School</title>
+<style>
+:root{--title:#12519C;--accent:#27A0DB;--hi:#F6C401;--text:#2b3a4a;--bg:#fff;--soft:#f3f9fd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+h1,h2,h3{color:var(--title);line-height:1.2;margin:0 0 16px}
+h1{font-size:clamp(2rem,6vw,3.4rem)}
+h2{font-size:clamp(1.5rem,4vw,2.1rem)}
+p{margin:0 0 16px}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+section{padding:80px 0}
+header{position:sticky;top:0;background:#fff;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:bold;color:var(--title);text-decoration:none}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--title);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.bar{height:4px;background:linear-gradient(90deg,#12519C 0 33.3%,#27A0DB 33.3% 66.6%,#F6C401 66.6%)}
+.hero{padding:96px 0 72px}
+.hero p.lead{font-size:1.2rem;max-width:520px}
+.btn{display:inline-block;background:var(--title);color:#fff;text-decoration:none;font-weight:bold;padding:14px 28px;border-radius:8px;border:2px solid var(--title);margin-top:8px}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin:48px 0 40px}
+.stat{display:flex;align-items:center;gap:14px}
+.stat strong{display:block;color:var(--title);font-size:1.6rem}
+.stat span{font-size:.9rem}
+.ico{width:44px;height:44px;flex:none}
+.signs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:40px}
+.sign{border-top:3px solid var(--accent);padding-top:16px}
+.sign svg{width:40px;height:40px;margin-bottom:8px}
+.sign h3{font-size:1.15rem;margin-bottom:6px}
+.mark{border-bottom:3px solid var(--hi)}
+#about,#dashboard{background:var(--soft)}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.chart{background:#fff;padding:16px;border-radius:8px;border:1px solid #dbeaf5}
+.chart h3{font-size:1rem;margin-bottom:12px}
+.chart canvas{max-height:260px}
+.contact{font-size:1.05rem}
+.contact li{margin-bottom:10px;list-style:none}
+.contact ul{padding:0;margin:24px 0}
+.emergency{display:inline-block;background:var(--hi);color:#12519C;font-weight:bold;padding:8px 16px;border-radius:6px}
+footer{text-align:center;padding:32px 20px;font-size:.9rem;border-top:1px solid #dbeaf5}
+@media(max-width:640px){header .wrap{height:auto;padding:12px 20px;flex-direction:column;gap:8px}section{padding:56px 0}.hero{padding:56px 0 48px}html{scroll-padding-top:120px}nav{gap:14px;justify-content:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Safe Spaces home">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#12519C" stroke-width="2" stroke-linejoin="round"><path d="M3 11l9-8 9 8v10H3z"/><path d="M9 21v-6h6v6" stroke="#27A0DB"/></svg>
+      Safe Spaces
+    </a>
+    <nav aria-label="Main menu">
+      <a href="#top">Home</a>
+      <a href="#what">What is it</a>
+      <a href="#about">About us</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#help">Get help</a>
+    </nav>
+  </div>
+  <div class="bar"></div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1>GVS safe space for all.</h1>
+      <p class="lead">A student-run space at Golden Valley School.</p>
+
+      <div class="stats" aria-label="Statistics (sample data)">
+        <div class="stat">
+          <svg class="ico" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="#27A0DB"/><path d="M22 22V4a18 18 0 0 1 15.6 9z" fill="#12519C"/><path d="M22 22l15.6-9A18 18 0 0 1 40 22z" fill="#F6C401"/></svg>
+          <div><strong>Pie chart</strong><span>Who we help</span></div>
+        </div>
+        <div class="stat">
+          <svg class="ico" viewBox="0 0 44 44"><rect x="5" y="22" width="8" height="18" fill="#12519C"/><rect x="18" y="10" width="8" height="30" fill="#27A0DB"/><rect x="31" y="16" width="8" height="24" fill="#12519C"/></svg>
+          <div><strong>Column chart</strong><span>Visits by grade</span></div>
+        </div>
+        <div class="stat">
+          <svg class="ico" viewBox="0 0 44 44" fill="none"><polyline points="4,34 15,22 24,28 40,8" stroke="#27A0DB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="40" cy="8" r="4" fill="#F6C401"/></svg>
+          <div><strong>Line chart</strong><span>Progress over time</span></div>
+        </div>
+      </div>
+
+      <a class="btn" href="#help">Get help</a>
+    </div>
+  </section>
+
+  <section id="what">
+    <div class="wrap">
+      <h2>What is a Safe Space?</h2>
+      <p style="max-width:640px">A safe space is a place where everybody feels included and there is no judgment. It can help people overcome their problems.</p>
+      <div class="signs">
+        <div class="sign">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#12519C" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 7 2 8 0" stroke="#27A0DB"/><path d="M9 9h.01M15 9h.01"/></svg>
+          <h3>Makes people feel better</h3>
+        </div>
+        <div class="sign">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#12519C" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5" stroke="#27A0DB"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6"/><path d="M16 14c3 0 5 2 5 5" stroke="#27A0DB"/></svg>
+          <h3>Open for all</h3>
+        </div>
+        <div class="sign">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#12519C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/><path d="M8 11h8" stroke="#27A0DB"/></svg>
+          <h3>No judgment</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About us</h2>
+      <p style="max-width:640px">We are <span class="mark">Iker and Sebastian</span>. Our mission is to create a safe space for all, where everyone feels included, without judgment.</p>
+    </div>
+  </section>
+
+  <section id="dashboard">
+    <div class="wrap">
+      <h2>Dashboard</h2>
+      <div class="charts">
+        <div class="chart"><h3>Sample data: who we help</h3><canvas id="pie" aria-label="Pie chart, sample data" role="img"></canvas></div>
+        <div class="chart"><h3>Sample data: visits by grade</h3><canvas id="col" aria-label="Column chart, sample data" role="img"></canvas></div>
+        <div class="chart"><h3>Sample data: visits per month</h3><canvas id="line" aria-label="Line chart, sample data" role="img"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="help">
+    <div class="wrap">
+      <h2>Get help</h2>
+      <p style="max-width:640px">If you don't feel safe, talk to the counselor (Wellness).</p>
+      <ul class="contact">
+        <li><strong>Email:</strong> Student Wellness Coordinator, <a href="mailto:wellnesscoordinator@goldenvalley.ed.cr">wellnesscoordinator@goldenvalley.ed.cr</a></li>
+        <li><strong>Phone:</strong> <a href="tel:89604578">8960 4578</a></li>
+      </ul>
+      <p class="emergency">Emergency: 911</p>
+    </div>
+  </section>
+</main>
+
+<footer>Golden Valley School, 2026</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+if (window.Chart) {
+  Chart.defaults.font.family = 'Arial, Helvetica, sans-serif';
+  var blue = '#12519C', sky = '#27A0DB', yellow = '#F6C401';
+  new Chart(document.getElementById('pie'), {
+    type: 'pie',
+    data: { labels: ['Stress', 'Friendships', 'Family', 'Other'],
+      datasets: [{ data: [40, 25, 20, 15], backgroundColor: [blue, sky, yellow, '#9fd3ee'] }] },
+    options: { plugins: { legend: { position: 'bottom' } } }
+  });
+  new Chart(document.getElementById('col'), {
+    type: 'bar',
+    data: { labels: ['7th', '8th', '9th', '10th', '11th'],
+      datasets: [{ label: 'Visits', data: [12, 19, 15, 22, 9], backgroundColor: sky }] },
+    options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+  });
+  new Chart(document.getElementById('line'), {
+    type: 'line',
+    data: { labels: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+      datasets: [{ label: 'Visits', data: [5, 9, 14, 18, 24, 30], borderColor: blue, backgroundColor: blue, tension: .3 }] },
+    options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+  });
+}
+</script>
+</body>
+</html>
